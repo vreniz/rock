@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sabores de la Noche – A nocturnal gastronomic festival where flavor, music, and culture unite under the stars." />
+  <title>Sabores de la Noche – Nocturnal Gastronomic Festival</title>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+
+      <!-- Logo -->
+      <a href="#" class="header__logo" aria-label="Sabores de la Noche – Home">
+        <span class="logo__title">SABORES</span>
+        <span class="logo__subtitle">de la Noche</span>
+      </a>
+
+      <!-- Desktop Navigation (center) -->
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="#hero"    class="nav__link">Home</a></li>
+          <li><a href="#dates"   class="nav__link">Events</a></li>
+          <li><a href="#about"   class="nav__link">Experiences</a></li>
+          <li><a href="#gallery" class="nav__link">Gallery</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <a href="#dates" class="btn btn--accent header__cta">Buy Tickets</a>
+
+      <!-- Hamburger Button (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <ul class="drawer__list">
+          <li><a href="#hero"    class="drawer__link" data-close>Home</a></li>
+          <li><a href="#dates"   class="drawer__link" data-close>Events</a></li>
+          <li><a href="#about"   class="drawer__link" data-close>Experiences</a></li>
+          <li><a href="#gallery" class="drawer__link" data-close>Gallery</a></li>
+          <li><a href="#contact" class="drawer__link" data-close>Contact</a></li>
+        </ul>
+        <a href="#dates" class="btn btn--accent drawer__cta" data-close>Buy Tickets</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+      <!-- Background image placed in assets/images/hero-bg.jpg -->
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">May 2025 · Colombia</p>
+        <h1 class="hero__title">
+          <span class="hero__title--line">One Night.</span>
+          <span class="hero__title--line">A Thousand</span>
+          <span class="hero__title--line hero__title--accent">Flavors.</span>
+          <span class="hero__title--line hero__title--accent">Unforgettable</span>
+          <span class="hero__title--line hero__title--accent">Experiences.</span>
+        </h1>
+        <p class="hero__subtitle">
+          The gastronomic festival that awakens your senses.
+        </p>
+        <a href="#about" class="btn btn--accent hero__cta">Discover More</a>
+      </div>
+
+      <!-- Decorative string lights -->
+      <div class="hero__lights" aria-hidden="true">
+        <span class="light"></span><span class="light"></span>
+        <span class="light"></span><span class="light"></span>
+        <span class="light"></span><span class="light"></span>
+        <span class="light"></span><span class="light"></span>
+      </div>
+    </section>
+
+    <!-- ========== UPCOMING DATES SECTION ========== -->
+    <section class="section fechas" id="dates">
+      <div class="container">
+        <h2 class="section__title">Upcoming Dates</h2>
+
+        <!-- HTML Table – mandatory requirement -->
+        <div class="table-wrapper">
+          <table class="events-table" aria-label="Festival upcoming dates">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">City</th>
+                <th scope="col">Venue</th>
+                <th scope="col">Schedule</th>
+                <th scope="col">Highlight</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Date"><strong>May 17</strong></td>
+                <td data-label="City">Barranquilla</td>
+                <td data-label="Venue">Plaza de la Paz</td>
+                <td data-label="Schedule">6:00 PM – 12:00 AM</td>
+                <td data-label="Highlight"><span class="badge">Fire Show</span></td>
+              </tr>
+              <tr>
+                <td data-label="Date"><strong>May 24</strong></td>
+                <td data-label="City">Cartagena</td>
+                <td data-label="Venue">Muelle de los Pegasos</td>
+                <td data-label="Schedule">5:00 PM – 11:00 PM</td>
+                <td data-label="Highlight"><span class="badge">Guest Chefs</span></td>
+              </tr>
+              <tr>
+                <td data-label="Date"><strong>May 31</strong></td>
+                <td data-label="City">Santa Marta</td>
+                <td data-label="Venue">Bahía Outdoor</td>
+                <td data-label="Schedule">6:00 PM – 12:00 AM</td>
+                <td data-label="Highlight"><span class="badge">Live Music</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT THE FESTIVAL ========== -->
+    <section class="section sobre" id="about">
+      <div class="container sobre__inner">
+
+        <!-- Image side -->
+        <div class="sobre__image-wrap">
+          <!-- Place image at assets/images/about-dish.jpg -->
+          <img
+            src="assets/img/about-dish.jpg"
+            alt="A beautifully plated gourmet dish served at the festival"
+            class="sobre__image"
+            loading="lazy"
+          />
+          <div class="sobre__image-glow" aria-hidden="true"></div>
+        </div>
+
+        <!-- Text side -->
+        <div class="sobre__content">
+          <h2 class="section__title section__title--left">About the Festival</h2>
+          <p class="sobre__description">
+            Sabores de la Noche is a unique gathering where gastronomy, music, and
+            culture come together to create unforgettable moments under the stars.
+            Each edition celebrates the richness of Colombian cuisine alongside
+            international culinary talent.
+          </p>
+
+          <!-- Semantic list – mandatory requirement -->
+          <div class="sobre__list-block">
+            <h3 class="sobre__list-heading">What Will You Find?</h3>
+            <ul class="experience-list">
+              <li class="experience-list__item">
+                <ion-icon name="restaurant-outline" aria-hidden="true"></ion-icon>
+                Chef's cuisine
+              </li>
+              <li class="experience-list__item">
+                <ion-icon name="fast-food-outline" aria-hidden="true"></ion-icon>
+                Food trucks
+              </li>
+              <li class="experience-list__item">
+                <ion-icon name="musical-notes-outline" aria-hidden="true"></ion-icon>
+                Live music
+              </li>
+              <li class="experience-list__item">
+                <ion-icon name="wine-outline" aria-hidden="true"></ion-icon>
+                Mixology
+              </li>
+              <li class="experience-list__item">
+                <ion-icon name="sparkles-outline" aria-hidden="true"></ion-icon>
+                Unique atmosphere
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== FOOD ZONES SECTION ========== -->
+    <section class="section zonas" id="zones">
+      <div class="container">
+        <h2 class="section__title">Thematic Zones</h2>
+        <p class="section__subtitle">Explore every corner of the festival's culinary universe</p>
+
+        <!-- CSS Grid layout – mandatory requirement -->
+        <div class="zonas__grid">
+
+          <article class="zona-card">
+            <div class="zona-card__icon-wrap" style="--zone-color: #e87d2b;">
+              <ion-icon name="globe-outline" aria-hidden="true"></ion-icon>
+            </div>
+            <h3 class="zona-card__name">World Flavors</h3>
+            <p class="zona-card__desc">International cuisines from five continents</p>
+          </article>
+
+          <article class="zona-card">
+            <div class="zona-card__icon-wrap" style="--zone-color: #c0392b;">
+              <ion-icon name="leaf-outline" aria-hidden="true"></ion-icon>
+            </div>
+            <h3 class="zona-card__name">Local Kitchen</h3>
+            <p class="zona-card__desc">Traditional Colombian recipes with a modern twist</p>
+          </article>
+
+          <article class="zona-card">
+            <div class="zona-card__icon-wrap" style="--zone-color: #8e44ad;">
+              <ion-icon name="ice-cream-outline" aria-hidden="true"></ion-icon>
+            </div>
+            <h3 class="zona-card__name">Sweets &amp; Desserts</h3>
+            <p class="zona-card__desc">Artisan pastries, chocolates and creative desserts</p>
+          </article>
+
+          <article class="zona-card">
+            <div class="zona-card__icon-wrap" style="--zone-color: #16a085;">
+              <ion-icon name="wine-outline" aria-hidden="true"></ion-icon>
+            </div>
+            <h3 class="zona-card__name">Drinks &amp; Cocktails</h3>
+            <p class="zona-card__desc">Craft cocktails, mocktails and premium spirits</p>
+          </article>
+
+          <article class="zona-card">
+            <div class="zona-card__icon-wrap" style="--zone-color: #f1c40f;">
+              <ion-icon name="musical-note-outline" aria-hidden="true"></ion-icon>
+            </div>
+            <h3 class="zona-card__name">Music &amp; Art</h3>
+            <p class="zona-card__desc">Live performances and urban art installations</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GALLERY SECTION ========== -->
+    <section class="section galeria" id="gallery">
+      <div class="container">
+        <h2 class="section__title">Gallery</h2>
+        <p class="section__subtitle">A glimpse into the night</p>
+
+        <!-- Grid layout gallery – mandatory requirement -->
+        <div class="galeria__grid">
+          <!-- Place images at assets/images/gallery-1.jpg through gallery-5.jpg -->
+          <figure class="galeria__item galeria__item--wide">
+            <img src="assets/img/gallery-1.jpg" alt="Night food stalls lit with warm lights at the festival" loading="lazy" />
+          </figure>
+          <figure class="galeria__item">
+            <img src="assets/img/gallery-2.jpg" alt="Chef plating an exquisite gourmet dish" loading="lazy" />
+          </figure>
+          <figure class="galeria__item">
+            <img src="assets/img/gallery-3.jpg" alt="Crowd enjoying live music performance" loading="lazy" />
+          </figure>
+          <figure class="galeria__item">
+            <img src="assets/img/gallery-4.jpg" alt="Colorful cocktail drinks at the mixology bar" loading="lazy" />
+          </figure>
+          <figure class="galeria__item">
+            <img src="assets/img/gallery-5.jpg" alt="Traditional Colombian food served at an outdoor table" loading="lazy" />
+          </figure>
+        </div>
+
+        <div class="galeria__cta-wrap">
+          <a href="#gallery" class="btn btn--outline">See More Photos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SPONSORS SECTION (bonus) ========== -->
+    <section class="section sponsors" id="sponsors" aria-label="Our sponsors">
+      <div class="container">
+        <h2 class="section__title sponsors__title">Our Sponsors</h2>
+        <p class="section__subtitle">Made possible by our partners</p>
+        <div class="sponsors__grid">
+          <!--
+            Place sponsor logos at:
+            assets/images/sponsor-bavaria.png
+            assets/images/sponsor-bancolombia.png
+            assets/images/sponsor-avianca.png
+            assets/images/sponsor-exito.png
+
+            The cards show the brand name as fallback text.
+            Once you add the images, they will appear above the name.
+            Use PNG with transparent background; the CSS mix-blend-mode
+            handles contrast automatically so no white boxes appear.
+          -->
+          <div class="sponsor-card">
+            <div class="sponsor-card__img-wrap">
+              <img src="assets/img/sponsor-bavaria.png" alt="Bavaria" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            <span class="sponsor-card__name">Bavaria</span>
+          </div>
+          <div class="sponsor-card">
+            <div class="sponsor-card__img-wrap">
+              <img src="assets/img/sponsor-bancolombia.jpg" alt="Bancolombia" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            <span class="sponsor-card__name">Bancolombia</span>
+          </div>
+          <div class="sponsor-card">
+            <div class="sponsor-card__img-wrap">
+              <img src="assets/img/sponsor-avianca.png" alt="Avianca" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            <span class="sponsor-card__name">Avianca</span>
+          </div>
+          <div class="sponsor-card">
+            <div class="sponsor-card__img-wrap">
+              <img src="assets/img/sponsor-exito.png" alt="Éxito" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            <span class="sponsor-card__name">Éxito</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="contact">
+    <div class="container footer__inner">
+
+      <!-- Brand column -->
+      <div class="footer__brand">
+        <a href="#" class="header__logo footer__logo" aria-label="Sabores de la Noche">
+          <span class="logo__title">SABORES</span>
+          <span class="logo__subtitle">de la Noche</span>
+        </a>
+        <p class="footer__tagline">Live the best nocturnal gastronomic experience.</p>
+      </div>
+
+      <!-- Links column -->
+      <nav class="footer__links" aria-label="Footer navigation">
+        <h4 class="footer__heading">Links</h4>
+        <ul class="footer__nav-list">
+          <li><a href="#hero"    class="footer__nav-link">Home</a></li>
+          <li><a href="#dates"   class="footer__nav-link">Events</a></li>
+          <li><a href="#about"   class="footer__nav-link">Experiences</a></li>
+          <li><a href="#gallery" class="footer__nav-link">Gallery</a></li>
+          <li><a href="#contact" class="footer__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Social column -->
+      <div class="footer__social-block">
+        <h4 class="footer__heading">Follow Us</h4>
+        <div class="footer__social">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="#" class="social-link" aria-label="TikTok">
+            <ion-icon name="logo-tiktok"></ion-icon>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+        </div>
+      </div>
+
+      <!-- Newsletter column -->
+      <div class="footer__newsletter">
+        <h4 class="footer__heading">Newsletter</h4>
+        <p class="footer__newsletter-text">Receive news and promotions.</p>
+        <div class="newsletter-form">
+          <label for="newsletter-email" class="sr-only">Your email address</label>
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            placeholder="Your email address"
+            class="newsletter-form__input"
+            autocomplete="email"
+          />
+          <button type="button" class="btn btn--accent newsletter-form__btn" onclick="handleNewsletter()">
+            Subscribe
+          </button>
+        </div>
+        <p class="newsletter-form__feedback" id="newsletterFeedback" aria-live="polite"></p>
+      </div>
+
+    </div>
+
+    <!-- Footer bottom bar -->
+    <div class="footer__bottom">
+      <p>© 2025 Sabores de la Noche. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- main.js sits in the project root alongside index.html -->
+  <script src="new.js"></script>
+
+</body>
+</html>
